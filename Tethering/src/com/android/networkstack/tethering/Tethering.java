@@ -461,7 +461,7 @@ public class Tethering {
             }
         };
         mContext.getContentResolver().registerContentObserver(Settings.Secure.getUriFor(
-                Settings.Secure.TETHERING_ALLOW_VPN_UPSTREAMS), false, vpnSettingObserver);
+                "tethering_allow_vpn_upstreams"), false, vpnSettingObserver);
     }
 
     private class TetheringThreadExecutor implements Executor {
